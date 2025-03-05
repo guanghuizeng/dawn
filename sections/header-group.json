@@ -63,10 +63,18 @@
             "title": "You may also like",
             "products_to_show": 8
           }
+        },
+        "cart_sell_star_rating_9cKBTk": {
+          "type": "shopify://apps/cart-sell/blocks/star_rating/f2c796d9-e71d-4c49-b57d-179f33900159",
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
         }
       },
       "block_order": [
-        "cart_sell_cart_suggestions_bbUjib"
+        "cart_sell_cart_suggestions_bbUjib",
+        "cart_sell_star_rating_9cKBTk"
       ],
       "settings": {}
     }
