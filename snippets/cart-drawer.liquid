@@ -80,6 +80,7 @@
       {%- if section.blocks.size > 0 -%}
         <div class="cart-drawer__blocks">
           {%- for block in blocks -%}
+            <div>block.type: {{ block.type }}</div>
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
