@@ -35,10 +35,15 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "cart-drawer"
   ]
 }
