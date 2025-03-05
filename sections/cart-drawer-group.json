@@ -1,0 +1,9 @@
+{
+  "name": "Cart drawer group",
+  "type": "cart_drawer",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer"
+    }
+  }
+} 

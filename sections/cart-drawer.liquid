@@ -8,6 +8,7 @@
 {% schema %}
 {
   "name": "Cart drawer",
+  "class": "cart-drawer",
   "settings": [],
   "blocks": [
     {
@@ -113,4 +114,5 @@
 }
 {% endschema %}
 
-{% render 'cart-drawer' %}
+{% sections 'cart-drawer-group' %}
+{% render 'cart-drawer', blocks: blocks %}
