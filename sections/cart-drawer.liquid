@@ -1,1 +1,25 @@
-{%- render 'cart-drawer' -%}
+{% comment %}
+  Renders cart drawer section
+
+  Usage:
+  {% render 'cart-drawer' %}
+{% endcomment %}
+
+{% schema %}
+{
+  "name": "Cart drawer",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cart drawer"
+    }
+  ]
+}
+{% endschema %}
+
+{% render 'cart-drawer' %}
