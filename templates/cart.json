@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "174122140811c70b69": {
       "type": "apps",
       "blocks": {
@@ -25,14 +33,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "cart-items": {
-      "type": "main-cart-items",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "cart-footer": {
@@ -87,8 +87,8 @@
     }
   },
   "order": [
-    "174122140811c70b69",
     "cart-items",
+    "174122140811c70b69",
     "cart-footer",
     "featured-collection"
   ]
