@@ -357,6 +357,7 @@ if (!customElements.get('product-info')) {
         const quantityFormUpdated = html.getElementById(`Quantity-Form-${sectionId}`);
         const selectors = ['.quantity__input', '.quantity__rules', '.quantity__label'];
         for (let selector of selectors) {
+          console.log('updateQuantityRules', selector);
           const current = this.quantityForm.querySelector(selector);
           const updated = quantityFormUpdated.querySelector(selector);
           if (!current || !updated) continue;
