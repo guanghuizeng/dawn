@@ -457,16 +457,11 @@
           </form>
         </cart-drawer-items>
 
-        <div>
-          {% for block in section.blocks %}
-            <div>{{ block.id }}</div>
-          {% endfor %}
-        </div>
         {% comment %} Blocks for Mobile {% endcomment %}
         {%- if section.blocks.size > 0 -%}
           <div class="cart-drawer__blocks cart-drawer__blocks--mobile">
             {%- for block in section.blocks -%}
-              {%- if block.type == '@app' and block.id contains 'mobile' -%}
+              {%- if block.type == '@app' and block.id contains '_mobile_' -%}
                 <div class="cart-drawer__block cart-drawer__block--mobile" {{ block.shopify_attributes }}>
                   {% render block %}
                 </div>
@@ -580,7 +575,18 @@
       <div class="drawer__inner_extra">
         <div class="cart-drawer__extra-inner">
           <div class="cart-drawer__extra-inner-content">
-            <h2 class="cart-drawer__extra-inner-title">Blocks for PC</h2>
+            {% comment %} Blocks for PC {% endcomment %}
+            {%- if section.blocks.size > 0 -%}
+              <div class="cart-drawer__blocks cart-drawer__blocks--pc">
+                {%- for block in section.blocks -%}
+                  {%- if block.type == '@app' and block.id contains '_pc_' -%}
+                    <div class="cart-drawer__block cart-drawer__block--pc" {{ block.shopify_attributes }}>
+                      {% render block %}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
           </div>
         </div>
       </div>
