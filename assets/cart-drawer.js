@@ -122,7 +122,7 @@ class CartDrawerItems extends CartItems {
       {
         id: 'CartDrawer',
         section: 'cart-drawer',
-        selector: '.drawer__inner',
+        selector: '.drawer__inner_main',
       },
       {
         id: 'cart-icon-bubble',
