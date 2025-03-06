@@ -461,10 +461,11 @@
         {%- if section.blocks.size > 0 -%}
           <div class="cart-drawer__blocks cart-drawer__blocks--mobile">
             {%- for block in section.blocks -%}
-              {%- case block.type -%}
-                {%- when '@app' -%}
+              {%- if block.type == '@app' and block.id contains 'mobile' -%}
+                <div class="cart-drawer__block cart-drawer__block--mobile" {{ block.shopify_attributes }}>
                   {% render block %}
-              {%- endcase -%}
+                </div>
+              {%- endif -%}
             {%- endfor -%}
           </div>
         {%- endif -%}
