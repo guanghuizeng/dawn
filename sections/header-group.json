@@ -63,15 +63,10 @@
             "title": "Exclusive Offers for You",
             "products_to_show": 8
           }
-        },
-        "cart_sell_server_status_QhGzgC": {
-          "type": "shopify://apps/cart-sell/blocks/server-status/f2c796d9-e71d-4c49-b57d-179f33900159",
-          "settings": {}
         }
       },
       "block_order": [
-        "cart_sell_cart_suggestions_6yJbt7",
-        "cart_sell_server_status_QhGzgC"
+        "cart_sell_cart_suggestions_6yJbt7"
       ],
       "settings": {}
     }
