@@ -75,20 +75,6 @@
         </button>
       </div>
 
-      <div>section.blocks.size: {{ section.blocks.size }}</div>
-
-      {%- if section.blocks.size > 0 -%}
-        <div class="cart-drawer__blocks">
-          {%- for block in section.blocks -%}
-            <div>block.type: {{ block.type }}</div>
-            {%- case block.type -%}
-              {%- when '@app' -%}
-                {% render block %}
-            {%- endcase -%}
-          {%- endfor -%}
-        </div>
-      {%- endif -%}
-
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
@@ -470,9 +456,9 @@
         </form>
       </cart-drawer-items>
 
-      {%- if blocks.size > 0 -%}
-        <div class="cart-drawer__blocks cart-drawer__blocks--bottom">
-          {%- for block in blocks -%}
+      {%- if section.blocks.size > 0 -%}
+        <div class="cart-drawer__blocks">
+          {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
