@@ -570,13 +570,6 @@
         </div>
       </div>
     </div>
-    <div class="drawer__inner gradient color-{{ settings.cart_color_scheme }} cart-drawer__right cart-drawer__right--pc">
-      <div class="cart-drawer__right-inner">
-        <div class="cart-drawer__right-inner-content">
-          <h2 class="cart-drawer__right-inner-title">Blocks for PC</h2>
-        </div>
-      </div>
-    </div>
   </div>
 </cart-drawer>
 
@@ -597,6 +590,11 @@
   @media screen and (min-width: 750px) {
     .cart-drawer__blocks--mobile {
       display: none;
+    }
+
+    .cart-drawer {
+      display: flex;
+      flex-direction: row;
     }
   }
 

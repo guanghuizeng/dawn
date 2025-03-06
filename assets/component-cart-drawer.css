@@ -169,11 +169,6 @@ cart-drawer {
   margin: 0 2.5rem 1.5rem;
 }
 
-.cart-drawer {
-  display: flex;
-  flex-direction: row;
-}
-
 .cart-drawer .drawer__cart-items-wrapper {
   flex-grow: 1;
 }
