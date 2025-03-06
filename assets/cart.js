@@ -158,6 +158,7 @@ class CartItems extends HTMLElement {
     });
     const eventTarget = event.currentTarget instanceof CartRemoveButton ? 'clear' : 'change';
 
+    console.log('updateQuantity', routes.cart_change_url, fetchConfig(), body);
     fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
       .then((response) => {
         return response.text();
