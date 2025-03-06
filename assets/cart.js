@@ -123,6 +123,7 @@ class CartItems extends HTMLElement {
   }
 
   getSectionsToRender() {
+    console.log('getSectionsToRender', document.getElementById('main-cart-items').dataset.id);
     return [
       {
         id: 'main-cart-items',
