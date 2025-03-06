@@ -57,12 +57,20 @@
     "cart_drawer_JN9r9h": {
       "type": "cart-drawer",
       "blocks": {
+        "cart_sell_cart_suggestions_6KeeEF": {
+          "type": "shopify://apps/cart-sell/blocks/cart-suggestions/f2c796d9-e71d-4c49-b57d-179f33900159",
+          "settings": {
+            "title": "You may also like",
+            "products_to_show": 8
+          }
+        },
         "cart_sell_server_status_QhGzgC": {
           "type": "shopify://apps/cart-sell/blocks/server-status/f2c796d9-e71d-4c49-b57d-179f33900159",
           "settings": {}
         }
       },
       "block_order": [
+        "cart_sell_cart_suggestions_6KeeEF",
         "cart_sell_server_status_QhGzgC"
       ],
       "settings": {}
