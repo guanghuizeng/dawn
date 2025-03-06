@@ -457,6 +457,11 @@
           </form>
         </cart-drawer-items>
 
+        <div>
+          {% for block in section.blocks %}
+            <div>{{ block.id }}</div>
+          {% endfor %}
+        </div>
         {% comment %} Blocks for Mobile {% endcomment %}
         {%- if section.blocks.size > 0 -%}
           <div class="cart-drawer__blocks cart-drawer__blocks--mobile">
