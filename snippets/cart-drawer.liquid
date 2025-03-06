@@ -458,9 +458,9 @@
         </cart-drawer-items>
 
         {% comment %} Blocks for Mobile {% endcomment %}
-        {%- if blocks.size > 0 -%}
+        {%- if section.blocks.size > 0 -%}
           <div class="cart-drawer__blocks cart-drawer__blocks--mobile">
-            {%- for block in blocks -%}
+            {%- for block in section.blocks -%}
               {%- if block.type == '@app' and block.id contains '_mobile_' -%}
                 <div class="cart-drawer__block cart-drawer__block--mobile" {{ block.shopify_attributes }}>
                   {% render block %}
@@ -576,9 +576,9 @@
         <div class="cart-drawer__extra-inner">
           <div class="cart-drawer__extra-inner-content">
             {% comment %} Blocks for PC {% endcomment %}
-            {%- if blocks.size > 0 -%}
+            {%- if section.blocks.size > 0 -%}
               <div class="cart-drawer__blocks cart-drawer__blocks--pc">
-                {%- for block in blocks -%}
+                {%- for block in section.blocks -%}
                   {%- if block.type == '@app' and block.id contains '_pc_' -%}
                     <div class="cart-drawer__block cart-drawer__block--pc" {{ block.shopify_attributes }}>
                       {% render block %}
