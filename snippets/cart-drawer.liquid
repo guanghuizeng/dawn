@@ -456,8 +456,9 @@
         </form>
       </cart-drawer-items>
 
+      {% comment %} Blocks for Mobile {% endcomment %}
       {%- if section.blocks.size > 0 -%}
-        <div class="cart-drawer__blocks">
+        <div class="cart-drawer__blocks cart-drawer__blocks--mobile">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when '@app' -%}
@@ -569,6 +570,13 @@
         </div>
       </div>
     </div>
+    <div class="drawer__inner gradient color-{{ settings.cart_color_scheme }} cart-drawer__right cart-drawer__right--pc">
+      <div class="cart-drawer__right-inner">
+        <div class="cart-drawer__right-inner-content">
+          <h2 class="cart-drawer__right-inner-title">Blocks for PC</h2>
+        </div>
+      </div>
+    </div>
   </div>
 </cart-drawer>
 
@@ -584,5 +592,17 @@
 
   .cart-drawer__blocks:empty {
     display: none;
+  }
+
+  @media screen and (min-width: 750px) {
+    .cart-drawer__blocks--mobile {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .cart-drawer__blocks--pc {
+      display: none;
+    }
   }
 </style>
