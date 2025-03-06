@@ -60,14 +60,14 @@
         "cart_sell_cart_suggestions_mobile_7gAnef": {
           "type": "shopify://apps/cart-sell/blocks/cart-suggestions-mobile/f2c796d9-e71d-4c49-b57d-179f33900159",
           "settings": {
-            "title": "Exclusive Offers for You (Mobile)",
+            "title": "Exclusive Offers for You !",
             "products_to_show": 8
           }
         },
         "cart_sell_cart_suggestions_pc_Hng7fE": {
           "type": "shopify://apps/cart-sell/blocks/cart-suggestions-pc/f2c796d9-e71d-4c49-b57d-179f33900159",
           "settings": {
-            "title": "Exclusive Offers for You (PC)",
+            "title": "Exclusive Offers for You !",
             "products_to_show": 8
           }
         }
