@@ -53,10 +53,24 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "cart_drawer_JN9r9h": {
+      "type": "cart-drawer",
+      "blocks": {
+        "cart_sell_server_status_QhGzgC": {
+          "type": "shopify://apps/cart-sell/blocks/server-status/f2c796d9-e71d-4c49-b57d-179f33900159",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "cart_sell_server_status_QhGzgC"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "cart_drawer_JN9r9h"
   ]
 }
